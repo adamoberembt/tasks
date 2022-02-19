@@ -38,8 +38,8 @@ function App(): JSX.Element {
                         <Col>
                             <div
                                 style={{
-                                    border: "1px solid red",
-                                    padding: "4px",
+                                    height: "50px",
+                                    width: "300px",
                                     backgroundColor: "red"
                                 }}
                             >
@@ -49,8 +49,8 @@ function App(): JSX.Element {
                         <Col>
                             <div
                                 style={{
-                                    border: "1px solid red",
-                                    padding: "4px",
+                                    height: "100px",
+                                    width: "200px",
                                     backgroundColor: "red"
                                 }}
                             >
