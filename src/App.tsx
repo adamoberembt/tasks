@@ -19,47 +19,42 @@ function App(): JSX.Element {
                 width="400"
                 height="300"
             />
-            <p>
-                Class List:
-                <ul>
-                    <li>First class</li>
-                    <li>second class</li>
-                    <li>third class</li>
-                </ul>
-            </p>
+            <ul>
+                <li>First class</li>
+                <li>second class</li>
+                <li>third class</li>
+            </ul>
             <p>
                 <Button onClick={() => console.log("Hello World!")}>
                     Log Hello World
                 </Button>
             </p>
-            <p>
-                <Container>
-                    <Row>
-                        <Col>
-                            <div
-                                style={{
-                                    height: "50px",
-                                    width: "300px",
-                                    backgroundColor: "red"
-                                }}
-                            >
-                                First column
-                            </div>
-                        </Col>
-                        <Col>
-                            <div
-                                style={{
-                                    height: "100px",
-                                    width: "200px",
-                                    backgroundColor: "red"
-                                }}
-                            >
-                                Second column
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </p>
+            <Container>
+                <Row>
+                    <Col>
+                        <div
+                            style={{
+                                height: "50px",
+                                width: "300px",
+                                backgroundColor: "red"
+                            }}
+                        >
+                            First column
+                        </div>
+                    </Col>
+                    <Col>
+                        <div
+                            style={{
+                                height: "100px",
+                                width: "200px",
+                                backgroundColor: "red"
+                            }}
+                        >
+                            Second column
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }
