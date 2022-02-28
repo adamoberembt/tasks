@@ -1,5 +1,3 @@
-import { GapValue } from "react-bootstrap/esm/types";
-
 /**
  * Consume an array of numbers, and return a new array containing
  * JUST the first and last number. If there are no elements, return
@@ -41,7 +39,9 @@ export function tripleNumbers(numbers: number[]): number[] {
  */
 export function stringsToIntegers(numbers: string[]): number[] {
     const arr = numbers.map(Number);
-    const arr2 = arr.map((value: number): number => (isNaN(value) ? 0 : value));
+    const arr2 = arr.map((value: number): number =>
+        value !== value ? 0 : value
+    );
     return arr2;
 }
 
